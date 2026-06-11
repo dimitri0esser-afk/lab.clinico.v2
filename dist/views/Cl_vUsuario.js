@@ -17,12 +17,20 @@ export default class Cl_vUsuario {
     onGuardarEstudiosCallback = null;
     onSaltarEstudiosCallback = null;
     // Exámenes disponibles
+    // Exámenes disponibles (Actualizados)
     examenesDisponibles = [
-        { id: "HEMO01", nombre: "Hemoglobina", costo: 15 },
-        { id: "GLUC02", nombre: "Glucosa", costo: 10 },
-        { id: "COL03", nombre: "Colesterol", costo: 20 },
-        { id: "UREA04", nombre: "Urea", costo: 12 },
-        { id: "CREA05", nombre: "Creatinina", costo: 18 }
+        { id: "E01", nombre: "Hemograma Completo", valorReferencia: "N/A", costo: 15.00 },
+        { id: "E02", nombre: "Glucosa Basal", valorReferencia: "70 - 100 mg/dL", costo: 8.00 },
+        { id: "E03", nombre: "Colesterol Total", valorReferencia: "< 200 mg/dL", costo: 10.00 },
+        { id: "E04", nombre: "Triglicéridos", valorReferencia: "< 150 mg/dL", costo: 10.00 },
+        { id: "E05", nombre: "Ácido Úrico", valorReferencia: "3.4 - 7.0 mg/dL", costo: 7.50 },
+        { id: "E06", nombre: "Creatinina", valorReferencia: "0.7 - 1.3 mg/dL", costo: 8.50 },
+        { id: "E07", nombre: "Urea", valorReferencia: "15 - 45 mg/dL", costo: 8.00 },
+        { id: "E08", nombre: "Perfil Tiroideo (TSH, T3, T4)", valorReferencia: "N/A", costo: 35.00 },
+        { id: "E09", nombre: "Examen General de Orina", valorReferencia: "N/A", costo: 6.00 },
+        { id: "E10", nombre: "Transaminasa TGO (AST)", valorReferencia: "8 - 33 U/L", costo: 9.00 },
+        { id: "E11", nombre: "Transaminasa TGP (ALT)", valorReferencia: "4 - 36 U/L", costo: 9.00 },
+        { id: "E12", nombre: "Bilirrubina Total", valorReferencia: "0.1 - 1.2 mg/dL", costo: 12.00 }
     ];
     constructor() {
         this.divPaciente = document.getElementById("formularioPaciente");
